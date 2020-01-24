@@ -1,4 +1,4 @@
-package com.example.android.courtcounter.Tests;
+package com.example.android.courtcounter.tests;
 
 import android.content.Context;
 

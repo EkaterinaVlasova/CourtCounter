@@ -1,4 +1,4 @@
-package com.example.android.courtcounter.Utils
+package com.example.android.courtcounter.utils
 
 import androidx.test.platform.app.InstrumentationRegistry
 
