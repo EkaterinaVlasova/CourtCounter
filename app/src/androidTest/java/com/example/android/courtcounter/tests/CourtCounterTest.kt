@@ -22,7 +22,7 @@ class MyFirstTest: BaseTest() {
         ActivityScenario.launch(MainActivity::class.java)
 
         onView(allOf(withId(R.id.team_a_score), withText("0")))
-                .check(matches(isDisplayed()))
+                .check(matches(isCompletelyDisplayed()))
 
     }
 }
