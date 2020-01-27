@@ -1,4 +1,4 @@
-package com.example.android.courtcounter.testfolder
+package com.example.android.courtcounter.tests
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
@@ -19,9 +19,11 @@ class MyFirstTest: BaseTest() {
     @Test
     fun CheckTeamAPoints() {
 
+        val TEAM_A_SCORE = "0"
+
         ActivityScenario.launch(MainActivity::class.java)
 
-        onView(allOf(withId(R.id.team_a_score), withText("0")))
+        onView(allOf(withId(R.id.team_a_score), withText(TEAM_A_SCORE)))
                 .check(matches(isCompletelyDisplayed()))
 
     }
