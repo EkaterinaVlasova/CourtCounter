@@ -17,7 +17,7 @@ import org.junit.runner.RunWith
 class MyFirstTest: BaseTest() {
 
     @Test
-    fun CheckTeamAPoints() {
+    fun checkTeamAPoints() {
 
         val TEAM_A_SCORE = "0"
 
