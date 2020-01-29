@@ -2,6 +2,7 @@ package com.example.android.courtcounter.tests
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -16,15 +17,28 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class MyFirstTest: BaseTest() {
 
+    val TEAM_A_SCORE = "0"
+
     @Test
     fun checkTeamAPoints() {
-
-        val TEAM_A_SCORE = "0"
 
         ActivityScenario.launch(MainActivity::class.java)
 
         onView(allOf(withId(R.id.team_a_score), withText(TEAM_A_SCORE)))
                 .check(matches(isCompletelyDisplayed()))
+
+    }
+
+    @Test
+    fun tapTeamAFreeThrow() {
+
+        ActivityScenario.launch(MainActivity::class.java)
+
+        onView(allOf(withId(R.id.freethrowButton)))
+                .perform(click())
+
+        onView(allOf(withId(R.id.team_a_score)))
+                .check(matches(withText("1")))
 
     }
 }

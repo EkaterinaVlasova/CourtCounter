@@ -59,14 +59,15 @@
                     android:layout_marginBottom="8dp"/>
 
                 <Button
+                    android:id="@+id/freethrowButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="freeThrowForTeamA"
-                    android:text="Free Throw"
-                    android:textAllCaps="true"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:onClick="freeThrowForTeamA"
+                    android:text="Free Throw"
+                    android:textAllCaps="true" />
             </LinearLayout>
 
 <View
