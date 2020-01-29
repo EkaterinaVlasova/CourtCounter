@@ -23,7 +23,6 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class MyFirstTest: BaseTest() {
 
-    //This test class will be testing the interaction between the HomeActivity and DetailsActivity
     private lateinit var counterTestRobot: CounterTestRobot
 
 
